@@ -1,69 +1,68 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    font-family: monospace;
-    list-style: none;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: monospace;
+  list-style: none;
 }
-body{
-    background-color: rgb(22, 21, 21);
+body {
+  background-color: rgb(22, 21, 21);
 }
 
-nav{
-    display: flex;
-    justify-content: center;
-    margin-top: 5%;
-
+nav {
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
 }
 ul {
-    background: rgb(255, 0, 0);
-    border-radius: 10px !important;
-  }
-  
-  li {
-    border-radius: 10px !important;
-    color: #fff;
-    background: rgb(255, 0, 0);
-    display: block;
-    float: left;
-    padding: 1rem;
-    position: relative;
-    text-decoration: none;
-    transition: all 0.5s; 
-  }
-  ul.dropdown > li{
-    border-radius: 0 !important;
-  }
-  li a {
-    color: #fff;
-  }
-  
-  li:hover {
-    background: rgb(211, 202, 202);
-    cursor: pointer;
-  }
-  
-  ul li ul {
-    background: orange;
-    visibility: hidden;
-    opacity: 0;
-    min-width: 5rem;
-    position: absolute;
-    transition: all 0.5s ease;
-    margin-top: 1rem;
-    left: 0;
-    display: none;
-  }
-  
-  ul li:hover > ul,
-  ul li ul:hover {
-    visibility: visible;
-    opacity: 1;
-    display: block;
-  }
-  
-  ul li ul li {
-    clear: both;
-    width: 100%;
-  }
+  background: rgb(255, 0, 0);
+  border-radius: 10px !important;
+}
+
+li {
+  border-radius: 10px !important;
+  color: #fff;
+  background: rgb(255, 0, 0);
+  display: block;
+  float: left;
+  padding: 1rem;
+  position: relative;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+ul.dropdown > li {
+  border-radius: 0 !important;
+}
+li a {
+  color: #fff;
+}
+
+li:hover {
+  background: rgb(211, 202, 202);
+  cursor: pointer;
+}
+
+ul li ul {
+  background: orange;
+  visibility: hidden;
+  opacity: 0;
+  min-width: 5rem;
+  position: absolute;
+  transition: all 0.5s ease;
+  margin-top: 1rem;
+  left: 0;
+  display: none;
+}
+
+ul li:hover > ul,
+ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
+ul li ul li {
+  clear: both;
+  width: 100%;
+}
