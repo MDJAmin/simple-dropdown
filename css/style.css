@@ -8,6 +8,10 @@
 }
 body {
   background-color: rgb(22, 21, 21);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 nav {
@@ -16,14 +20,13 @@ nav {
   margin-top: 5%;
 }
 ul {
-  background: rgb(255, 0, 0);
+  background: rgb(255, 247, 0);
   border-radius: 10px !important;
 }
 
 li {
-  border-radius: 10px !important;
   color: #fff;
-  background: rgb(255, 0, 0);
+  background: rgb(255, 247, 0);
   display: block;
   float: left;
   padding: 1rem;
@@ -31,20 +34,29 @@ li {
   text-decoration: none;
   transition: all 0.5s;
 }
+
+.middle {
+  padding: 0 3.4px;
+}
+li:last-child {
+  border-radius: 0 10px 10px 0 !important;
+}
+li:first-child {
+  border-radius: 10px 0 0 10px !important;
+}
 ul.dropdown > li {
   border-radius: 0 !important;
 }
 li a {
-  color: #fff;
+  color: #000000;
 }
 
 li:hover {
-  background: rgb(211, 202, 202);
+  background: rgb(205, 179, 8);
   cursor: pointer;
 }
 
 ul li ul {
-  background: orange;
   visibility: hidden;
   opacity: 0;
   min-width: 5rem;
@@ -65,4 +77,36 @@ ul li ul:hover {
 ul li ul li {
   clear: both;
   width: 100%;
+}
+
+.dropdown {
+  text-align: center;
+  border-radius: none !important;
+}
+
+.MDJAminDiv {
+  z-index: 4444;
+  position: fixed;
+  bottom: 5%;
+  left: 2%;
+}
+
+.MDJAmin {
+  text-decoration: none;
+  border-bottom: 1px dashed rgba(255, 247, 0, 0.707);
+  border-top: 1px dashed rgba(255, 247, 0, 0.707);
+  /* border-bottom: 1px dashed rgb(44, 44, 44); */
+  /* border-top: 1px dashed rgb(44, 44, 44); */
+  padding: 4px 0;
+  /* color: rgba(44, 44, 44, 0.525); */
+  color: rgba(204, 204, 204, 0.414);
+  font-family: monospace;
+  font-style: italic;
+  font-size: 1em;
+  transition: all 0.5s;
+}
+
+.MDJAmin:hover {
+  /* color: #000000; */
+  color: rgb(255, 247, 0);
 }
